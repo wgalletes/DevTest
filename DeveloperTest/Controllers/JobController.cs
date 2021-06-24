@@ -9,7 +9,6 @@ namespace DeveloperTest.Controllers
     public class JobController : ControllerBase
     {
         private readonly IJobService jobService;
-
         public JobController(IJobService jobService)
         {
             this.jobService = jobService;
@@ -30,7 +29,6 @@ namespace DeveloperTest.Controllers
             {
                 return NotFound();
             }
-
             return Ok(job);
         }
 

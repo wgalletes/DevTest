@@ -12,7 +12,12 @@ export class JobDetailComponent implements OnInit {
 
   private jobId: number;
 
-  public job: JobModel;
+  public job: JobModel = {
+    jobId: null,
+    engineer: null,
+    when: null,
+    customerId: null
+  };
 
   constructor(
     private route: ActivatedRoute,
